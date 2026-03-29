@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Nanay Sim-MZ Mini-Mart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-active-nav="contact">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="logo" href="home.html" aria-label="Nanay Sim-MZ Mini-Mart home">
+          <span class="logo__nanay">Nanay</span><span class="logo__sim">Sim</span
+          ><span class="logo__rest">-MZ</span>
+        </a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="home.html">Home</a></li>
+            <li><a class="nav__link" href="about.html">About</a></li>
+            <li><a class="nav__link" href="products.html">Products</a></li>
+            <li><a class="nav__link" href="services.html">Services</a></li>
+            <li><a class="nav__link" href="visit.html">Visit Us</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-pressed="false"
+            aria-label="Toggle light mode"
+            title="Toggle theme"
+          >
+            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
+            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+          </button>
+          <a class="btn btn--cv" href="contact.html">
+            <span class="btn--cv__text">Inquiry | Order</span>
+            <span class="btn--cv__icon" aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section page-intro" id="contact">
+        <div class="section__inner section__inner--narrow">
+          <h1 class="section__title">Contact</h1>
+          <p class="section__lead">
+            Here You can ask about available grocery items, you can place an order request, you can choose your preferred payment
+            method. Zambales language: Ite pwedi mo nin pastangon no anyay available ha grocery, ite pwedi ka nin mag request nin order,
+            pwedi ka nin mamili no pano mo labay mamayar.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Phone:</strong> <a href="tel:+639000000000">562-810-5815</a></li>
+            <li><strong>Email:</strong> <a href="mailto:hello@example.com">eclevlit2003@yahoo.com</a></li>
+          </ul>
+          <form class="order-form" id="order-form" novalidate>
+            <label class="field">
+              <span class="field__label">Your name</span>
+              <input class="field__input" type="text" name="name" required />
+            </label>
+            <label class="field">
+              <span class="field__label">Contact number</span>
+              <input class="field__input" type="tel" name="phone" required />
+            </label>
+            <label class="field">
+              <span class="field__label">What do you need?</span>
+              <textarea
+                class="field__input field__input--textarea"
+                name="items"
+                placeholder="Example: 5kg rice, 2 cans sardines, 1 dishwashing liquid"
+                required
+              ></textarea>
+            </label>
+            <label class="field">
+              <span class="field__label">Question or special request</span>
+              <textarea
+                class="field__input field__input--textarea"
+                name="message"
+                placeholder="Ask about prices, stock, delivery, or substitutes..."
+              ></textarea>
+            </label>
+            <label class="field">
+              <span class="field__label">Preferred payment method</span>
+              <select class="field__input" name="payment" required>
+                <option value="">Select a payment method</option>
+                <option value="Zelle">Zelle</option>
+                <option value="GCash">GCash</option>
+                <option value="Maya">Maya</option>
+                <option value="Bank transfer">Bank transfer</option>
+                <option value="Cash on pickup">Cash on pickup</option>
+                <option value="Cash on delivery">Cash on delivery</option>
+              </select>
+            </label>
+            <button class="btn btn--primary" type="submit">Send order / inquiry</button>
+            <p class="form-note" id="order-form-note" aria-live="polite">
+              This form records your request in your browser and prepares your message.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Nanay Sim-MZ Mini-Mart. All rights reserved.</p>
+    </footer>
+
+    <button type="button" class="back-top" id="back-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
